@@ -1,0 +1,280 @@
+ %-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+\item\small{
+    {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \textbf{#1} & \textbf{\small #2} \\
+  \textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+  \small#1 & \textbf{\small }\\
+\end{tabular*}\vspace{-7pt}}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+{\Huge \scshape Harshil Tomar} \\ \vspace{7pt}
+%\href{https://jatinpandey.vercel.app/}{\raisebox{-0.2\height}\ \underline{Portfolio  }}
+\small \raisebox{-0.05\height}\faPhone\ +91 9958977078
+~ \href{mailto:harshiltomar20@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{harshiltomar20@gmail.com}} ~
+~\href{https://www.linkedin.com/in/harshiltomar/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}~
+~\href{https://github.com/harshiltomar}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}}~
+~\href{https://harshil-portfolio-eta.vercel.app/}{\raisebox{-0.2\height}\faGraduationCap\ \underline{Portfolio}}~
+\vspace{-8pt}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experiences}
+  \resumeSubHeadingListStart
+ 
+\resumeSubheading
+  {Newgen Software }{January 2024 -- Present}
+  {Software Engineer Intern}{New Delhi}
+  \resumeItemListStart
+    \resumeItem{Led the development of 14+ \textbf{Claim Attainment Forms} (in \textbf{Java and JS}) for \textbf{CIG} using executeServerEvent}
+    \resumeItem{Implemented Validation and mapped data with \textbf{Java 17.0} and \textbf{Event Handling} using cutom js in \textbf{Eclipse}}
+    \resumeItem{Handled upto 250+ process docs in \textbf{Newgen Omniapp} with User Rights Management and Process Handling}
+    \resumeItem{TechStack: Java, JavaScript, Oracle SQL, Netbeans 17, Eclipse IDE}
+
+\resumeItemListEnd
+
+\resumeSubheading
+  {Infiniti Tech Solutions}{March 2023 -- August 2023}
+  {FullStack Developer Intern}{Hybrid, Noida}
+  \resumeItemListStart
+    %\resumeItem{After two rounds of coding test I was selected for the program.}
+    \resumeItem{Developed a \textbf{Robust UI}, using React.js and Redux-State Management for 15+ Web-Pages}
+    \resumeItem{Designed \textbf{RESTful API} in Backend Models.Increased database efficiency with MongoDB and Nodejs by \textbf{14 percent}}
+    \resumeItem{Created Node.js routing models for MongoDB and integrated \textbf{axios, Nodemailer} for 7+ custom mailings}
+    \resumeItem{TechStack: \textbf{MERN FullStack, React.js, Redux} Express.js, Node.js, MongoDB   .}
+    
+\resumeItemListEnd
+
+\resumeSubheading
+  {Spotline}{August 2022 -- Feb 2023}
+  {Frontend Engineer Intern}{Remote, USA}
+  \resumeItemListStart
+    %\resumeItem{After two rounds of coding test I was selected for the program.}
+    \resumeItem{Developed a MVP \textbf{UI Interface Design in 3 weeks}, with sub-page routing and Frontend Animation.}
+    \resumeItem{Integrated \textbf{Lazy Loading, Shimmer UI} which helped improve Website Performance by \textbf{148ms} scaling for 10k+ visits}
+    \resumeItem{Gained hands-on experience in \textbf{real-world software development} and created \textbf{10+ sub react based Web Pages.}}
+    \resumeItem{TechStack: \textbf{React.js, Axios, Redux} Tailwind, npm.}
+    
+\resumeItemListEnd
+
+% \resumeSubheading
+%   {Fiverr}{October 2021 -- April 2022}
+%   {UI/UX Designer}{Remote}
+%   \resumeItemListStart
+%     %\resumeItem{After two rounds of coding test I was selected for the program.}
+%     \resumeItem{Curated a \textbf{Low Fidelity User Interface}, under the guidance of SAAS-based clients and worked in Figma and Sketchbook to fine-tune the \textbf{UI design and Routing} for upto 140+ screens}
+%     \resumeItem{Worked with \textbf{75+ clients globally} ranging from Startup to Full-Fledges Companies while maintaining 4.9 rating}
+    
+% \resumeItemListEnd
+   
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\vspace{-14pt}
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+      {\textbf{Mark-ED} $|$ \emph{\textbf{MERN}, \textbf{JavaScript,} AWS, BetaBlaster API  }  $|$ {\href{https://msit-marked-fhr1.onrender.com/}{Link}}}{June 2023}
+      \resumeItemListStart
+        \resumeItem{\textbf{Live project}, utilized by \textbf{130+ teachers} to manage \textbf{2000+ students} for IP University,informing parents about attendance on a daily basis}
+        \resumeItem{Lowered annual costs from \textbf{3.36L by 94 percent} and  maintains a 6 month attendance database}
+        \resumeItem{Developed \textbf{JS fn} to make HTTP req. Used \textbf{BetaBlaster API} to handle whatsapp messaging for \textbf{1000+ contacts}.}
+      \resumeItemListEnd
+
+      \vspace{-16pt}
+      \resumeProjectHeading
+      {\textbf{Tumble} $|$ \emph{MongoDB \textbf{Nextjs, Typescript}, Clerk, Uploadthings, Stripe API }$|$ {\href{https://tumble-harshil.vercel.app/}{ Link}}}{January 2020}
+      \resumeItemListStart
+      \resumeItem{Built a Real-world \textbf{Event Management System} with Clerk Authentication \textbf{Axios HTTP} request.}
+      \resumeItem{Added \textbf{Typescript UI} with shadcn \textbf{clerk} mailing. Integrated custom url diversion and Google Meet Rest API for auto-calendar event creation}
+    \resumeItem{Implemented full-functional Paytm and Stripe Payment and \textbf{Endpoint-API}}
+      \resumeItemListEnd
+
+      \vspace{-16pt}
+      \resumeProjectHeading
+      {\textbf{TaskFlow} $|$ \emph{MongoDB, Expressjs \textbf{Reactjs, Nodejs} }$|$ {\href{https://github.com/harshiltomar/Todo}{ Link}}}{January 2020}
+      \resumeItemListStart
+        \resumeItem{Built a \textbf{MERN Todo system} with CRUD operation with all 4 \textbf{Axios HTTP} request.}
+        \resumeItem{Added \textbf{Google Auth2 Signin} with \textbf{nodemailer n Sendgrid} mailing}
+        \resumeItem{Bcypt Auth and \textbf{React-router} for 10+ page navigation. Mongoose for User Task and History with TTL of }
+        %\resumeItem{Project deployment on Heroku.}
+      \resumeItemListEnd
+
+      \vspace{-13pt}
+      \resumeProjectHeading
+      {\textbf{Streamify} $|$ \emph{\textbf{React.js, Firebase}, Parcel, REST API \textbf{Redux }}$|$ {\href{https://netlix-gpt-harshil.netlify.app/}{ Link}}}{January 2020}
+      \resumeItemListStart
+        \resumeItem{Streaming Web-App with \textbf{OpenAI API} with 100+ movies, YT Trailer and \textbf{Movie Recommendation}}
+        \resumeItem{Added from TMDB API fetching, with \textbf{Redux}. Applied \textbf{User Auth via Firebase} with Custom \textbf{JS alert}}
+        \resumeItem{Streamlined \textbf{Link State routing} Navigation. Built \textbf{GPT prompt} for Movie Recommendation System}
+      \resumeItemListEnd
+
+      
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\vspace{-16pt}  
+\section{Technical Skills }
+ \begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+  \textbf{Languages:}{ C++(Interm, DSA), Java (Interm), SQL (Interm), JavaScript(Interm)} \\
+   \vspace{3pt}
+  \textbf{Development:}{ HTML/CSS, React.js, Express.js, Node.js, Next.js, Typescript, Tailwind, Axios, Git, Github}  \\
+  \vspace{3pt}
+  \textbf{Database n API:}{ MongoDB, Firebase, Postman, MySQL, PostGres, Prisma}
+}}
+ \end{itemize}
+ \vspace{-16pt}
+
+ %-----------EDUCATION-----------
+\vspace{2pt}
+\section{Education}
+  \resumeSubHeadingListStart
+\resumeSubheading
+  {Maharaja Surajmal Institute of Technology, Delhi}{2020 - 2024}
+  {Bachelor of Technology in Information Technology}{CGPA: 8.9}
+  \resumeSubHeadingListEnd
+
+ %-----------PROGRAMMING SKILLS-----------
+\vspace{0pt}  
+\section{Achievements }
+ \begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+  {Awarded \textbf{Letter of Recommendation} for Excellent Contribution to MarkED, IPU (2022-2024)} \\
+  \vspace{3pt}
+  {Achiveved \textbf{Level 2 Rating} on Fiverr as UI/UX Designer with \textbf{75+ Global clients} and \textbf{4.87 rating}} \\
+}}
+ \end{itemize}
+ \vspace{-16pt}
+
+% %-----------Achievements-----------
+% \vspace{-10pt}
+% \section{Achievements}
+% \resumeSubHeadingListStart
+% \vspace{-5pt}
+% \resumeProjectHeading
+%     {• Awarded \textbf{Letter of Recommendation} for Excellent Contribution to MarkED, IPU (2022-2024)}\\
+% \resumeItemListEnd
+% \vspace{-15pt} % Adjust the vertical spacing as needed
+% \resumeSubHeadingListStart
+% \vspace{-5pt}
+% \resumeProjectHeading
+%     {• Achiveved \textbf{Level 2 Rating} on Fiverr as UI/UX Designer with \textbf{75+ Global clients} and \textbf{4.87 rating}}\\
+% \resumeItemListEnd
+
+
+\end{document}
+
